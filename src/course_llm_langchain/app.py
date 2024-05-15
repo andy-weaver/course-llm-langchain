@@ -1,17 +1,8 @@
-import os
-import openai
-from dotenv import load_dotenv, find_dotenv
-from langchain_openai import OpenAI
+0  
 
-load_dotenv(find_dotenv())
+messages = [
+    SystemMessage("You are a helpful assistant. You answer statistical questions, and assume an expert level of sophistication in the user's understanding of statistics. Your goal is to answer the user's questions as concisely as possible, while still providing a complete answer."),
+    HumanMessage("What is the difference between L1 and L2 regularization?"),
+]
 
-api_key = os.getenv("OPEN_AI_API_KEY")
-
-llm_model = "gpt-3.5-turbo-0125"
-
-llm = OpenAI(
-    api_key=api_key,
-    temperature=0.7
-)
-
-print(llm.invoke("What is the capital of France?"))
+print(chat.invoke(messages).content)

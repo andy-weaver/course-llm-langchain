@@ -16,6 +16,14 @@ dependencies = [
     "langgraph>=0.0.48",
     "langserve[all]>=0.1.1",
     "langchain-openai>=0.1.6",
+    "llama-cpp-python>=0.2.73",
+    "huggingface-hub>=0.23.0",
+    "huggingface-cli>=0.1",
+    "ipykernel>=6.29.4",
+    "jupyter>=1.0.0",
+    "notebook>=7.1.3",
+    "langchain-chroma>=0.1.0",
+    "beautifulsoup4>=4.12.3",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
